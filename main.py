@@ -1,13 +1,11 @@
 import login
 import mahasiswa
 
-#Dikopi dari Kode Ferdi :P
-#Dimodif
-#Main func
-
+#Dikopi dan dimodif dari Kode Ferdi :D
 
 #Biar termasuk dua fungsi :P
 
+#Fungsi utama
 def main():
     while True:
         print("\n===== MAHASISWA =====")
@@ -33,6 +31,7 @@ def main():
         else:
             print("Pilihan tidak valid!")
 
+#Fungsi cek user login
 def initcheck():
     if(login.login()):
         main()
