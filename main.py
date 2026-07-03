@@ -5,7 +5,10 @@ import mahasiswa
 #Dimodif
 #Main func
 
-if(login.login()):
+
+#Biar termasuk dua fungsi :P
+
+def main():
     while True:
         print("\n===== MAHASISWA =====")
         print("1. Tambah Mahasiswa")
@@ -29,5 +32,11 @@ if(login.login()):
             break
         else:
             print("Pilihan tidak valid!")
-else:
-    print("GAGAL LOGIN!")
+
+def initcheck():
+    if(login.login()):
+        main()
+    else:
+        print("GAGAL LOGIN!")
+
+initcheck()
